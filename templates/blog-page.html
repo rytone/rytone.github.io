@@ -1,0 +1,16 @@
+{% import "post_header.html" as post_header %}
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>Blog - Maxwell Beck</title>
+{% endblock meta %}
+
+{% block content %}
+    <section>
+        <h1 class="m-t2">Maxwell Beck</h1>
+        <article>
+            {{ post_header::render(page=page) }}
+            {{ page.content | safe }}
+        </article>
+    </section>
+{% endblock content %}

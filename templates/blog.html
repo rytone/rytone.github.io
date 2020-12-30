@@ -1,0 +1,15 @@
+{% import "post_preview.html" as post_preview %}
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>Blog - Maxwell Beck</title>
+{% endblock meta %}
+
+{% block content %}
+    <section>
+        <h1 class="m-t2">Maxwell Beck</h1>
+        {% for page in section.pages %}
+            {{ post_preview::render(page=page) }}
+        {% endfor %}
+    </section>
+{% endblock content %}

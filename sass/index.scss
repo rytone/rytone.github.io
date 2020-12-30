@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+$color-fg: #000;
+$color-bg: #fff;
+$color-dim: #aaa;
+$color-acc1: #2f6690;
+$color-acc2: #468dc3;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: $color-bg;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $color-fg;
+    
+    margin: 1rem;
+}
+
+section {
+    max-width: 40em;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+
+h1 {
+    font-size: 2.8125em;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-size: 1.4375rem;
+    line-height: 1.75rem;
+}
+
+h4, h5 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+}
+
+a {
+    font-weight: 700;
+    color: $color-acc1;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: $color-acc2;
+}
+
+.dim {
+    color: $color-dim;
+}
+
+.m-t0 {
+    margin-top: 0;
+}
+
+.m-t1 {
+    margin-top: 1.75rem;
+}
+
+.m-t2 {
+    margin-top: 3.5rem;
+}
+
+.m-b0 {
+    margin-bottom: 0;
+}
+
+.m-b1 {
+    margin-bottom: 1.75rem;
+}
+
+.m-b2 {
+    margin-bottom: 3.5rem;
+}
+
+// Half grid magic
+ul, ol {
+    margin-top: 0.8125rem;
+    margin-bottom: 0.8125rem;
+}
+
+.h-tab {
+  color: $color-bg;
+  width: max-content;
+
+  position: relative;
+  z-index: 1;
+}
+
+.h-tab::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    width: calc(100% + 2rem);
+    height: 1.75rem;
+    background: $color-fg;
+}
