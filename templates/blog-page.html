@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 
 {% block meta %}
-    <title>Blog - Maxwell Beck</title>
+<title>{{ page.title }} - Maxwell Beck</title>
 {% endblock meta %}
 
 {% block content %}
@@ -13,4 +13,7 @@
             {{ page.content | safe }}
         </article>
     </section>
+
+    <script data-isso="https://isso.ryt.one/" src="https://isso.ryt.one/js/embed.min.js"></script>
+    <section id="isso-thread"></section>
 {% endblock content %}
