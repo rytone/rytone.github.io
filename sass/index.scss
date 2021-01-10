@@ -126,3 +126,29 @@ img {
     height: 1.75rem;
     background: $color-fg;
 }
+
+// Comments
+.schnack-comments {
+    padding: 1.75rem;
+    border-left: solid #f5f5f5 1rem;
+    list-style: none;
+}
+
+.schnack-author {
+    display: block;
+}
+
+.schnack-author > a {
+    border: none;
+}
+
+.schnack-date > a {
+    border: none;
+}
+
+.schnack-body {
+    margin-top: 0.8125rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.75rem;
+}
