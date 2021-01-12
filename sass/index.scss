@@ -3,7 +3,6 @@ $color-bg: #fff;
 $color-dim: #aaa;
 $color-acc1: #2f6690;
 $color-acc2: #468dc3;
-
 html {
     font-size: 16px;
 }
@@ -147,8 +146,13 @@ img {
 }
 
 .schnack-body {
+    width: 100%;
+
     margin-top: 0.8125rem;
     margin-left: 0;
     margin-right: 0;
+}
+
+.schnack-reply {
     margin-bottom: 1.75rem;
 }
