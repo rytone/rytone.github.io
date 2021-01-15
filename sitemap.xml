@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://ryt.one/</loc>
+    </url>
+    <url>
+        <loc>https://ryt.one/blog/</loc>
+    </url>
+    <url>
+        <loc>https://ryt.one/blog/test/</loc>
+        <lastmod>2020-12-30</lastmod>
+    </url>
+</urlset>
